@@ -8,8 +8,6 @@ body {
   color: white;
   overflow-x: hidden;
   background-color: #0d0714;
-
-
 }
 
 code {
@@ -25,7 +23,7 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 60px;
+  row-gap: 55px;
 }
 
 .header {
@@ -52,19 +50,35 @@ header .input {
   padding: 10px 15px;
   color: #777;
   font-size: 16px;
-  font-weight: 400;  
+  font-weight: 400;
 }
 
-.container{
+.container {
   width: 100%;
   display: flex;
   flex-direction: column;
   column-gap: 16px;
 }
-.title{
+.title {
   font-size: 16px;
   font-weight: 400;
   text-align: left;
 }
 
-
+.todo {
+  border-radius: 10px;
+  background: #15101c;
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 21px;
+  font-size: 18px;
+  color: #9E78CF;
+}
+.todo-title{
+  margin: 0;
+}
+.icons{
+  display: flex;
+  column-gap: 16px;
+  cursor: pointer;
+}
