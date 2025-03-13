@@ -1,6 +1,6 @@
 import Todo from "./Todo";
 
-function TasksToDo({ todos }) {
+function TasksToDo({ todos ,onSetTodo }) {
   return (
     <div className="container">
       <p className="title">Tasks to do - X</p>
@@ -8,7 +8,7 @@ function TasksToDo({ todos }) {
         todo.done ? (
           ""
         ) : (
-          <Todo key={todo.id} done={todo.done} title={todo.title} />
+          <Todo key={todo.id} title={todo.title} done={todo.done} id={todo.id} todos={todos} onSetTodo={onSetTodo} />  
         )
       )}
     </div>
