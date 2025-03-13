@@ -1,7 +1,7 @@
 function TasksDone() {
     return (
-        <div>
-           <p>Done - X</p>
+        <div className="container">
+           <p className="title">Done - X</p>
         </div>
     )
 }

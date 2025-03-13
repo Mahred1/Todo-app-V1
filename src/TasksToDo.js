@@ -1,7 +1,7 @@
 function TasksToDo() {
     return (
-        <div>
-            Tasks to do - X
+        <div className="container">
+            <p className="title">Tasks to do - X</p>
         </div>
     )
 }
