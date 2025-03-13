@@ -1,6 +1,4 @@
 function Todo({title,done}) {
-    console.log(title)
-    console.log(done) 
   return (
     <div className="todo">
       <p className={`todo-title ${done?"completed":""}`}>{title}</p> 

@@ -10,9 +10,10 @@ const todo = [
 function App() {
 
   const [todos,setTodos]=useState(todo);
+  const [input,setInput]=useState(""); 
   return (
-    <div className="app">
-      <Header />
+    <div className="app"> 
+      <Header input={input} onSetInput={setInput} todos={todos} onSetTodos={setTodos} />
       <TasksToDo todos={todos} />
       <TasksDone todos={todos}/>
     </div>

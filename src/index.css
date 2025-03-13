@@ -40,6 +40,7 @@ header button {
   height: 40px;
   font-size: 25px;
   color: white;
+  cursor: pointer;
 }
 header .input {
   width: 382px;
