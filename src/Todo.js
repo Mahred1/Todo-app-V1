@@ -1,8 +1,10 @@
 function Todo({title,done}) {
+    console.log(title)
+    console.log(done) 
   return (
     <div className="todo">
-      <p className={`todo-title ${!done?"completed":""}`}>{title}</p> 
-      {done &&<div className="icons">
+      <p className={`todo-title ${done?"completed":""}`}>{title}</p> 
+      {!done &&<div className="icons">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="23"

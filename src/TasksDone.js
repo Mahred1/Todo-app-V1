@@ -5,7 +5,7 @@ function TasksDone({todos}) {
     return (
         <div className="container">
            <p className="title">Done - X</p>
-           {todos.map((todo)=> todo.done ?"": <Todo key={todo.id} done={todo.done} title={todo.title} />)}  
+           {todos.map((todo)=> todo.done ?<Todo key={todo.id} done={todo.done} title={todo.title} />:"")}  
      
         </div>
     )
