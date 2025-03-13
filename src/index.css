@@ -82,3 +82,8 @@ header .input {
   column-gap: 16px;
   cursor: pointer;
 }
+
+.completed{
+  text-decoration:line-through;
+  color: #78CFB0;
+}
