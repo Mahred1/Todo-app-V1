@@ -1,8 +1,8 @@
-function Todo() {
+function Todo({title,done}) {
   return (
     <div className="todo">
-      <p className="todo-title">to study react fundamentals</p>
-      <div className="icons">
+      <p className={`todo-title ${!done?"completed":""}`}>{title}</p> 
+      {done &&<div className="icons">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="23"
@@ -16,7 +16,6 @@ function Todo() {
           />
         </svg>
         <svg
-          class="icon"
           xmlns="http://www.w3.org/2000/svg"
           width="23"
           height="22"
@@ -28,7 +27,7 @@ function Todo() {
             fill="#9E78CF"
           />
         </svg>
-      </div>
+      </div>}
     </div>
   );
 }
