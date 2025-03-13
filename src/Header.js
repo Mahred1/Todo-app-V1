@@ -7,11 +7,12 @@ function Header({ input, onSetInput,todos,onSetTodos }) {
       id: Math.floor(Math.random() * 100000),
       done: false,
     };
-   
+   onSetInput("")
   }
   return (
     <header className="header">
       <input
+      value={input}
         onChange={(e) => onSetInput(e.target.value)}
         className="input"
         placeholder="Add a new task"

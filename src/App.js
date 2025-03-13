@@ -4,15 +4,16 @@ import TasksDone from "./TasksDone";
 import TasksToDo from "./TasksToDo";
 
 function App() {
-  const data = JSON.parse(localStorage.getItem("todo") )  
+  const data = JSON.parse(localStorage.getItem("todo")) || [];
   const [todos, setTodos] = useState(data);
   const [input, setInput] = useState("");
 
-  
-  console.log(data)
-  useEffect(function(){
-    localStorage.setItem("todo",JSON.stringify(todos)) 
-  },[todos])
+  useEffect(
+    function () {
+      localStorage.setItem("todo", JSON.stringify(todos));
+    },
+    [todos]
+  );
   return (
     <div className="app">
       <Header
