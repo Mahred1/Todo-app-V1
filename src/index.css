@@ -81,6 +81,10 @@ header .input {
   display: flex;
   column-gap: 16px;
   cursor: pointer;
+  transition: hover 300ms ease-in-out;
+}
+.icons svg:hover path{
+  fill: #372a49;
 }
 
 .completed{
