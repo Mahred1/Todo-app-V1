@@ -5,14 +5,14 @@ function Header({ input, onSetInput, todos, onSetTodos }) {
 
   useEffect(function () {
     function callback(e) {
-      if (document.activeElement === task.current) return;
 
       if (e.key === "Enter") {
         task.current.focus();
       }
     }
     document.addEventListener("keypress", (e) => callback(e));
-  }, []);
+  }, [input]); 
+
   function handleAddTodo() {
     if (input !== "") onSetTodos(() => [...todos, newTodo]);
     const newTodo = {
