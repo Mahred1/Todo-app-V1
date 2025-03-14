@@ -23,7 +23,7 @@ function App() {
         onSetTodos={setTodos}
       />
       <TasksToDo todos={todos} onSetTodo={setTodos} />
-      <TasksDone todos={todos} />
+      <TasksDone todos={todos} onSetTodo={setTodos} />
     </div>
   );
 }
